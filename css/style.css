@@ -91,6 +91,10 @@ main {
     border: none;
     box-shadow: 1px 1px 5px var(--border-button);
 }
+#lightSwitch{
+    padding: 10px;
+    border-radius: 50%;
+}
 #switch:hover{
     cursor: pointer;
 }
