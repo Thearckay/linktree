@@ -13,6 +13,7 @@
     --border-button:  rgba(0, 0, 0, 0.285);
     --bg-url: url(../img/bg-desktop-light.jpg);
     --switch-position: flex-end;
+    --animation: switchSlideOn;
 }
 
 .dark{
@@ -22,6 +23,7 @@
     --border-button:  rgba(255, 255, 255, 0.285);
     --bg-url: url(../img/bg-desktop.jpg);
     --switch-position: flex-start;
+    --animation: switchSlideOff;
 }
 
 .link-list-off{
@@ -56,8 +58,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red */
-
 }
 
 .profile{
@@ -90,13 +90,18 @@ main {
     border-radius: 50%;
     border: none;
     box-shadow: 1px 1px 5px var(--border-button);
+    position: relative;
+    right: 0;
+    animation: var(--animation) .3s;
 }
+
 #lightSwitch{
     padding: 10px;
     border-radius: 50%;
 }
 #switch:hover{
     cursor: pointer;
+    outline: 9px solid var(--border-button);
 }
 
 .buttonsContainer{
@@ -107,7 +112,6 @@ main {
     flex-direction: column;
     justify-content: space-around;
     list-style: none;
-    /* border: 1px solid red; */
 }
 
 .buttons {
@@ -125,7 +129,7 @@ main {
     transition: all .36s;
 }
 .buttons:hover{
-    background: rgba(255, 255, 255, 0.5);
+    background:var(--border-button);
     border: 2px solid var(--txt-color);
 }
 
@@ -152,7 +156,7 @@ main {
 }
 .socialMidiasIcons:hover {
     cursor: pointer;
-    background-color: #00000024;
+    background-color: var(--border-button);
 
 }
 
@@ -172,5 +176,22 @@ footer {
     .socialMidiasIcons{
         font-size: 30px;
     }
-    
+}
+
+@keyframes switchSlideOff{
+    from {
+        right: -70%;
+    }
+    to {
+        right: 0%;
+    }
+}
+
+@keyframes switchSlideOn{
+    from {
+        right: 70%;
+    }
+    to {
+        right: 0%;
+    }
 }
