@@ -24,11 +24,11 @@ O **DevLinks** é uma página de links (estilo Linktree) otimizada para ser util
 
 O projeto possui uma interface limpa e moderna, com foco total na experiência do usuário.
 
-![Preview Desktop](./.github\assets\desktopVersion.png)
+![Preview Desktop](./.github/assets/desktopVersion.png)
 
 Incluindo a acessibilidade e responsividade
 
-![Preview Mobile](.github\assets\mobile.png)
+![Preview Mobile](.github/assets/mobile.png)
 
 ---
 
@@ -45,7 +45,7 @@ Incluindo a acessibilidade e responsividade
 
 A conclusão deste projeto e dos desafios propostos me rendeu o certificado de fundamentos em programação web pela **Rocketseat**.
 
-![Certificate](.github\assets\certificate.png)
+![Certificate](.github/assets/certificate.png)
 
 ---
 
